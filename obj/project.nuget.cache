@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7AdtsqeMGn+/E8F/3mi2QBUtQwYTqgT7Ykr6dOm4O07AxCpalDY+pfEB8gPwMY8EAaURtvGdbcYlbyjzKLuaNg==",
+  "success": true,
+  "projectFilePath": "/mnt/sda5/Study/CSharp/GetWordBeforeWatchingMovie/GetWordBeforeWatchingMovie.csproj",
+  "expectedPackageFiles": [
+    "/home/thienan/.nuget/packages/topdev.opensubtitles.client/1.3.0/topdev.opensubtitles.client.1.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

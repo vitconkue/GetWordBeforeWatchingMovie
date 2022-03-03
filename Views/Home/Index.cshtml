@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model WordViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<p>Input the movieID from <a href="https://www.imdb.com/">imdb</a> and select your vocabulary level! </p>
+
+<form method="post" asp-action="ReceiveRequest">
+  <input type="radio" id="radioA1" name="englishLevel" value="A1">
+  <label for="A1">A1</label>
+  <input type="radio" id="radioA2" name="englishLevel" value="A2">
+  <label for="A2">A2</label>
+  <input type="radio" id="radioB1" name="englishLevel" value="B1">
+  <label for="B1">B1</label>
+  <input type="radio" id="radioB2" name="englishLevel" value="B2">
+  <label for="B2">B2</label>
+  <input type="radio" id="radioC1" name="englishLevel" value="C1">
+  <label for="C1">C1</label><br>
+  <label for="imdbIdtextbox">Id: </label><br>
+  <input type="text" id="textImdbId" name="imdbIdTextbox"/>
+  
+  <button type="submit">Find the words!</button>
+</form>
+  @if (Model is not null && Model.Words.Count > 0)
+  {
+      foreach (var word in Model.Words)
+      {
+          <p>@word</p> <br>
+      }
+  }
+
+
