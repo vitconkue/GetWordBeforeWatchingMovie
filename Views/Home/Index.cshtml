@@ -25,8 +25,12 @@
   
   <button type="submit">Find the words!</button>
 </form>
-  @if (Model is not null && Model.Words.Count > 0)
+
+
+@if (Model is not null && Model.Words.Count > 0)
   {
+      
+  <h2>Here are some words beyond the @Model.Level level in the movie: </h2>
       foreach (var word in Model.Words)
       {
           <p>@word</p> <br>

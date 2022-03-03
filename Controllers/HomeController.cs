@@ -85,7 +85,7 @@ namespace GetWordBeforeWatchingMovie.Controllers
                 "C1" => Level.C1
             };
             var wordList = await GetWordLists(imdbIdTextbox, userLevel); 
-            var model = new WordViewModel (wordList);
+            var model = new WordViewModel (wordList, englishLevel);
             return View("Index", model);
         }
 
